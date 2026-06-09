@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-env
+  namespace: roboshop
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      resources:
+        requests: 
+          memory: "100Mi"
+          cpu: "80m"
+        limits:
+          memory: "150Mi"
+          cpu: "80m"
+      env:
+        - name: project
+          value: roboshop
+        - name: environment
+          value: production
