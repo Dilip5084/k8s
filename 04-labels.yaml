@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Pod-lables
+  name: pod-lables
   namespace: roboshop
   labels:
     name: roboshop
