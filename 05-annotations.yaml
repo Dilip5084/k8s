@@ -7,7 +7,7 @@ metadata:
     Project: roboshop
     enironment: production
   annotations:
-    image registry: "https://hub.docker.com/"
+    image.registry: "https://hub.docker.com/"
 spec:
   containers:
     - name: nginx
