@@ -3,13 +3,13 @@ kind: Pod
 metadata:
   name: pod-config
   namespace: roboshop
+  labels:
+   name: "k8s"
+   env: "dev"
 spec:
   containers:
     - name: nginx-configmap
       image: nginx
-      labels:
-        name: "k8s"
-        env: "dev"
       envFrom:
       - configMapRef:
         name: nginx-configmap
