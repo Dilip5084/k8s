@@ -8,7 +8,7 @@ metadata:
    env: "dev"
 spec:
   containers:
-  - name: nginx-configmap
+  - name: nginx-config
     image: nginx
     envFrom:
     - configMapRef:
